@@ -1,0 +1,2 @@
+Primary: #27b1df
+Grey Background: #32323A
