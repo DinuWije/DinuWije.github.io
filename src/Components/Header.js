@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import ParticlesBg from "particles-bg";
 import pdf from "../files/DinuWijetungaResume.pdf";
+import Typist from 'react-typist';
+import Typical from 'react-typical';
 
 class Header extends Component {
   render() {
@@ -60,8 +62,24 @@ class Header extends Component {
 
         <div className="row banner">
           <div className="banner-text">
-            <h1 className="responsive-headline">{name}</h1>
-            <h3>{description}</h3>
+            <Typical
+              steps={['Dinu ', 150, 'Dinu Wijetunga', 500]}
+              wrapper="h1"
+            />
+            <Typist cursor={{show: false}}>
+              <Typist.Delay ms={1500} />
+              <h3>University of Waterloo Software Engineering '25</h3>
+              <Typist.Backspace count={47} delay={1500} />
+              <h3>Passionate about using technology for social good</h3>
+              <Typist.Backspace count={49} delay={1500} />
+              <h3>Avid camper, swimmer, and nature lover</h3>
+              <Typist.Backspace count={38} delay={1500} />
+              <h3>Interested in Frontend and Mobile Dev</h3>
+              <Typist.Backspace count={37} delay={1500} />
+              <h3>Huge movie buff (Interstellar is my fav)</h3>
+              <Typist.Backspace count={41} delay={1500} />
+              <h3>University of Waterloo Software Engineering '25</h3>
+            </Typist>
             <hr />
             <ul className="social">
               <a

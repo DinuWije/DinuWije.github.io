@@ -1,29 +1,9 @@
-/*
-=====================================================================
-*   Ceevee v1.0 Layout Stylesheet
-*   url: styleshout.com
-*   03-18-2014
-=====================================================================
-
-   TOC:
-   a. General Styles
-   b. Header Styles
-   c. About Section
-   d. Resume Section
-   e. Portfolio Section
-   f. Call To Action Section
-   g. Testimonials Section
-   h. Contact Section
-   i. Footer
-
-===================================================================== */
-
 /* ------------------------------------------------------------------ */
 /* a. General Styles
 /* ------------------------------------------------------------------ */
 
 body {
-  background: #0f0f0f;
+  background: #191e29;
 }
 
 /* ------------------------------------------------------------------ */
@@ -78,9 +58,113 @@ header .banner-text h3 a {
 header .banner-text hr {
   width: 60%;
   margin: 18px auto 24px auto;
-  border-color: #2f2d2e;
+  border-color: #1d2430;
   border-color: rgba(150, 150, 150, 0.1);
 }
+
+/* .Typist {
+  border-right: 5px solid red;
+  height: nowrap;
+  overflow: hidden;
+
+  white-space: nowrap;
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: red;
+  }
+} */
+
+/* .Typist .Cursor {
+  display: inline-block;
+
+  opacity: 1;
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+/* 
+.responsive-headline {
+  height: nowrap;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(30), blink-caret 0.75s step-end infinite;
+  position: relative;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+.responsive-headline::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 118%;
+  border-right: 6px solid red;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+} */
+
+/* .responsive-headline {
+  height: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid red;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(30), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: red;
+  }
+} */
 
 /* header social links */
 header .social {
@@ -148,7 +232,7 @@ header .scrolldown a:hover {
   top: 0;
 }
 .opaque {
-  background-color: #32323a;
+  background-color: #191e29;
 }
 
 /* hide toggle button */
@@ -197,11 +281,11 @@ ul#nav li.current a {
 }
 
 /* ------------------------------------------------------------------ */
-/* c. About Section
+/* About Me
 /* ------------------------------------------------------------------ */
 
 #about {
-  background: #32323a;
+  background: #1d2430;
   padding-top: 96px;
   padding-bottom: 66px;
   overflow: hidden;
@@ -256,228 +340,11 @@ ul#nav li.current a {
 }
 
 /* ------------------------------------------------------------------ */
-/* d. Resume Section
-/* ------------------------------------------------------------------ */
-
-#resume {
-  background: #ebeeee;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  overflow: hidden;
-}
-
-#resume a,
-#resume a:visited {
-  color: #0762f9;
-}
-#resume a:hover,
-#resume a:focus {
-  color: #313131;
-}
-
-#resume h1 {
-  font: 15px/24px "opensans-semibold", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-align: center;
-  margin-bottom: 35px;
-  font-size: 25px;
-  color: #27b1df;
-}
-
-#resume h2 {
-  text-align: center;
-  font-size: 25px;
-  color: #27b1df;
-  margin-bottom: 0px;
-}
-#resume h4 {
-  text-align: center;
-  font-size: 15px;
-  color: #f50057;
-  margin-bottom: 5px;
-}
-
-#resume h6 {
-  text-align: center;
-  font-size: 12px;
-  color: #27b1df;
-  margin-top: 10px;
-}
-
-#resume h1 span {
-  border-bottom: 3px solid #0762f9;
-  padding-bottom: 6px;
-}
-#resume h3 {
-  font: 25px/30px "opensans-bold", sans-serif;
-}
-
-#resume .header-col {
-  padding-top: 9px;
-}
-#resume .main-col {
-  padding-right: 10%;
-}
-
-.education,
-.work {
-  margin-bottom: 48px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid #e8e8e8;
-}
-#resume .info {
-  font: 16px/24px "librebaskerville-italic", serif;
-  color: #6e7881;
-  margin-bottom: 18px;
-  margin-top: 9px;
-}
-#resume .info span {
-  margin-right: 5px;
-  margin-left: 5px;
-}
-#resume .date {
-  font: 15px/24px "opensans-regular", sans-serif;
-  margin-top: 6px;
-}
-
-/*----------------------------------------------*/
-/*	Skill Bars
-/*----------------------------------------------*/
-
-.bars {
-  width: 95%;
-  float: left;
-  padding: 0;
-  text-align: left;
-}
-.bars .skills {
-  margin-top: 36px;
-  list-style: none;
-}
-.bars li {
-  position: relative;
-  margin-bottom: 60px;
-  background: #333;
-  height: 42px;
-  border-radius: 0px;
-}
-.bars li em {
-  font: 15px "opensans-bold", sans-serif;
-  color: #313131;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: normal;
-  position: relative;
-  top: -36px;
-}
-.bar-expand {
-  position: absolute;
-  left: 0;
-  top: 0;
-
-  margin: 0;
-  padding-right: 24px;
-  background: #313131;
-  display: inline-block;
-  height: 42px;
-  line-height: 42px;
-  border-radius: 0px;
-}
-/*
-.git {
-  	-moz-animation: git 2s ease;
-  	-webkit-animation: git 2s ease;
-}
-.illustrator {
-  	-moz-animation: illustrator 2s ease;
-  	-webkit-animation: illustrator 2s ease;
-}
-.reactjs {
-  	-moz-animation: reactjs 2s ease;
-  	-webkit-animation: reactjs 2s ease;
-}
-.css {
-  	-moz-animation: css 2s ease;
-  	-webkit-animation: css 2s ease;
-}
-.html5 {
-  	-moz-animation: html5 2s ease;
-  	-webkit-animation: html5 2s ease;
-}
-.vuejs {
-  	-moz-animation: vuejs 2s ease;
-  	-webkit-animation: vuejs 2s ease;
-}
-.mongodb {
-  	-moz-animation: mongodb 2s ease;
-  	-webkit-animation: mongodb 2s ease;
-}
-
-@-moz-keyframes git {
-  0%   { width: 0px;  }
-  100% { width: 60%;  }
-}
-@-moz-keyframes illustrator {
-  0%   { width: 0px;  }
-  100% { width: 55%;  }
-}
-@-moz-keyframes reactjs {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-moz-keyframes css {
-  0%   { width: 0px;  }
-  100% { width: 90%;  }
-}
-@-moz-keyframes html5 {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}
-@-moz-keyframes vuejs {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-moz-keyframes mongodb {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}
-
-@-webkit-keyframes photoshop {
-  0%   { width: 0px;  }
-  100% { width: 60%;  }
-}
-@-webkit-keyframes illustrator {
-  0%   { width: 0px;  }
-  100% { width: 55%;  }
-}
-@-webkit-keyframes reactjs {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-webkit-keyframes css {
-  0%   { width: 0px;  }
-  100% { width: 90%;  }
-}
-@-webkit-keyframes html5 {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}
-@-webkit-keyframes vuejs {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-webkit-keyframes mongodb {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}  */
-
-/* ------------------------------------------------------------------ */
-/* e. Portfolio Section
+/* Programming Projects
 /* ------------------------------------------------------------------ */
 
 #portfolio {
-  background: #87888a;
+  background: #1d2430;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -665,6 +532,92 @@ ul#nav li.current a {
 /* content fadeout */
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content .popup-modal {
   opacity: 0;
+}
+
+/* ------------------------------------------------------------------ */
+/* Extracurricular Activities 
+/* ------------------------------------------------------------------ */
+
+#resume {
+  background: #1d2430;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+
+#resume a,
+#resume a:visited {
+  color: #0762f9;
+}
+#resume a:hover,
+#resume a:focus {
+  color: #313131;
+}
+
+#resume h1 {
+  font: 15px/24px "opensans-semibold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 25px;
+  color: #fff;
+}
+
+#resume h2 {
+  text-align: center;
+  font-size: 25px;
+  color: #27b1df;
+  margin-bottom: 0px;
+}
+#resume h4 {
+  text-align: center;
+  font-size: 15px;
+  color: #f50057;
+  margin-bottom: 5px;
+}
+
+#resume h6 {
+  text-align: center;
+  font-size: 12px;
+  color: #27b1df;
+  margin-top: 10px;
+}
+
+#resume h1 span {
+  border-bottom: 3px solid #0762f9;
+  padding-bottom: 6px;
+}
+#resume h3 {
+  font: 25px/30px "opensans-bold", sans-serif;
+}
+
+#resume .header-col {
+  padding-top: 9px;
+}
+#resume .main-col {
+  padding-right: 10%;
+}
+
+.education,
+.work {
+  margin-bottom: 48px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e8e8e8;
+}
+#resume .info {
+  font: 16px/24px "librebaskerville-italic", serif;
+  color: #6e7881;
+  margin-bottom: 18px;
+  margin-top: 9px;
+}
+#resume .info span {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+#resume .date {
+  font: 15px/24px "opensans-regular", sans-serif;
+  margin-top: 6px;
 }
 
 /* ------------------------------------------------------------------ */
@@ -914,10 +867,10 @@ call-to-action .button {
 /* ------------------------------------------------------------------ */
 
 #contact {
-  background: #191919;
+  background: #1d2430;
   padding-top: 96px;
   padding-bottom: 102px;
-  color: #636363;
+  color: #1d2430;
 }
 #contact .section-head {
   margin-bottom: 42px;
@@ -1069,7 +1022,7 @@ call-to-action .button {
 footer {
   padding-top: 48px;
   margin-bottom: 30px;
-  color: #303030;
+  color: #191e29;
   font-size: 14px;
   text-align: center;
   position: relative;

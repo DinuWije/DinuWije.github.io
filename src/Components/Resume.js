@@ -148,7 +148,7 @@ export default function CenteredTabs() {
 
   //Awards
   const DOE = (
-    <Grid item xs={3}>
+    <Grid item xs>
       <SimpleReactLightbox>
         <Card className={classes.root} variant="outlined" onClick={handleOpen}>
           <SRLWrapper>
@@ -191,8 +191,84 @@ export default function CenteredTabs() {
       </SimpleReactLightbox>
     </Grid>
   );
+  const Principal = (
+    <Grid item xs>
+      <SimpleReactLightbox>
+        <Card className={classes.root} variant="outlined" onClick={handleOpen}>
+          <SRLWrapper>
+            <CardActionArea>
+              <CardMedia
+                className={classes.media}
+                image="/images/ECs/principal.jpg"
+                title="PrincipalAward"
+              />
+
+              <CardContent>
+                <Typography
+                  gutterBottom
+                  variant="h2"
+                  component="h2"
+                  color="textPrimary"
+                >
+                  Principal’s Award for Student Leadership
+                </Typography>
+                <Typography component="h4">
+                  Stephen Lewis Secondary School
+                </Typography>
+                <Typography variant="h5" color="textSecondary" component="p">
+                Awarded to a graduating student who demonstrates outstanding leadership skills and community involvement throughout their high school career. 
+                </Typography>
+                <br />
+                <br />
+                <br />
+                <br />
+              </CardContent>
+            </CardActionArea>
+          </SRLWrapper>
+        </Card>
+      </SimpleReactLightbox>
+    </Grid>
+  );
+  const Govener = (
+    <Grid item xs>
+      <SimpleReactLightbox>
+        <Card className={classes.root} variant="outlined" onClick={handleOpen}>
+          <SRLWrapper>
+            <CardActionArea>
+              <CardMedia
+                className={classes.media}
+                image="/images/ECs/govGen.jpg"
+                title="GovGen"
+              />
+
+              <CardContent>
+                <Typography
+                  gutterBottom
+                  variant="h2"
+                  component="h2"
+                  color="textPrimary"
+                >
+                  Governor General’s Bronze Award
+                </Typography>
+                <Typography component="h4">
+                  Stephen Lewis Secondary School
+                </Typography>
+                <Typography variant="h5" color="textSecondary" component="p">
+                  Awarded to the student with the highest combined Grade 11/12 average in a Canadian High School.
+                </Typography>
+                <br />
+                <br />
+                <br />
+                <br />
+              </CardContent>
+            </CardActionArea>
+          </SRLWrapper>
+        </Card>
+      </SimpleReactLightbox>
+    </Grid>
+  );
   const Suzuki = (
-    <Grid item xs={3}>
+    <Grid item xs>
       <Card className={classes.root} variant="outlined" onClick={handleOpen}>
         <CardActionArea>
           <CardMedia
@@ -226,7 +302,7 @@ export default function CenteredTabs() {
     </Grid>
   );
   const Schulich = (
-    <Grid item xs={3}>
+    <Grid item xs>
       <Card className={classes.root} variant="outlined" onClick={handleOpen}>
         <CardActionArea>
           <CardMedia
@@ -259,7 +335,7 @@ export default function CenteredTabs() {
     </Grid>
   );
   const NLS = (
-    <Grid item xs={3}>
+    <Grid item xs>
       <Card className={classes.root} variant="outlined">
         <CardActionArea>
           <CardMedia
@@ -294,7 +370,7 @@ export default function CenteredTabs() {
 
   //Leadership
   const SAC = (
-    <Grid item xs={3}>
+    <Grid item xs>
       <Card className={classes.root} variant="outlined" onClick={handleOpen}>
         <CardActionArea>
           <CardMedia
@@ -329,7 +405,7 @@ export default function CenteredTabs() {
     </Grid>
   );
   const PSPC = (
-    <Grid item xs={3}>
+    <Grid item xs>
       <Card className={classes.root} variant="outlined" onClick={handleOpen}>
         <CardActionArea>
           <CardMedia
@@ -363,7 +439,7 @@ export default function CenteredTabs() {
     </Grid>
   );
   const SHAD = (
-    <Grid item xs={3}>
+    <Grid item xs>
       <Card className={classes.root} variant="outlined" onClick={handleOpen}>
         <CardActionArea>
           <CardMedia
@@ -398,7 +474,7 @@ export default function CenteredTabs() {
     </Grid>
   );
   const Swim = (
-    <Grid item xs={3}>
+    <Grid item xs>
       <Card className={classes.root} variant="outlined" onClick={handleOpen}>
         <CardActionArea>
           <CardMedia
@@ -434,7 +510,7 @@ export default function CenteredTabs() {
 
   //Volunteering
   const Tanzania = (
-    <Grid item xs={3}>
+    <Grid item xs>
       <Card className={classes.root} variant="outlined" onClick={handleOpen}>
         <CardActionArea>
           <CardMedia
@@ -468,7 +544,7 @@ export default function CenteredTabs() {
     </Grid>
   );
   const Aspire = (
-    <Grid item xs={3}>
+    <Grid item xs>
       <Card className={classes.root} variant="outlined" onClick={handleOpen}>
         <CardActionArea>
           <CardMedia
@@ -501,7 +577,7 @@ export default function CenteredTabs() {
     </Grid>
   );
   const EOK = (
-    <Grid item xs={3}>
+    <Grid item xs>
       <Card className={classes.root} variant="outlined" onClick={handleOpen}>
         <CardActionArea>
           <CardMedia
@@ -536,7 +612,7 @@ export default function CenteredTabs() {
     </Grid>
   );
   const volSwim = (
-    <Grid item xs={3}>
+    <Grid item xs>
       <Card className={classes.root} variant="outlined" onClick={handleOpen}>
         <CardActionArea>
           <CardMedia
@@ -570,8 +646,42 @@ export default function CenteredTabs() {
   );
 
   //Work
+  const blueprint = (
+    <Grid item xs>
+      <Card className={classes.root} variant="outlined" onClick={handleOpen}>
+        <CardActionArea>
+          <CardMedia
+            className={classes.media}
+            image="/images/ECs/blueprint.jpg"
+            title="Blueprint"
+          />
+
+          <CardContent>
+            <Typography
+              gutterBottom
+              variant="h2"
+              component="h2"
+              color="textPrimary"
+            >
+              Blueprint
+            </Typography>
+            <Typography component="h4">
+              University of Waterloo
+            </Typography>
+            <Typography variant="h5" color="textSecondary" component="p">
+            Blueprint is a student-run club which develops software for non-profit organizations in the Waterloo Region. As a Developer on a Blueprint project, I’ve worked with a team of 10 devs/designers to create an interactive webapp from scratch in 4 months.    
+            </Typography>
+            <br />
+            <br />
+            <br />
+            <br />
+          </CardContent>
+        </CardActionArea>
+      </Card>
+    </Grid>
+  );
   const lifeguard = (
-    <Grid item xs={3}>
+    <Grid item xs>
       <Card className={classes.root} variant="outlined" onClick={handleOpen}>
         <CardActionArea>
           <CardMedia
@@ -606,7 +716,7 @@ export default function CenteredTabs() {
     </Grid>
   );
   const createv = (
-    <Grid item xs={3}>
+    <Grid item xs>
       <Card className={classes.root} variant="outlined" onClick={handleOpen}>
         <CardActionArea>
           <CardMedia
@@ -622,16 +732,13 @@ export default function CenteredTabs() {
               component="h2"
               color="textPrimary"
             >
-              Engineering Intern
+              Software Engineering Intern
             </Typography>
             <Typography component="h4">
               CreatEV Aerospace Team, RyersonU
             </Typography>
             <Typography variant="h5" color="textSecondary" component="p">
-              Helped the Ryerson Solar Aircraft team collect solar panel data
-              using MATLAB, design components to test the aircraft’s motors
-              using CAD, and helped assemble the fuselage of the second
-              generation aircraft.
+            Helped the Ryerson Solar Aircraft team collect and analyze solar panel data using MATLAB. Also helped with some designing/testing of the aircraft’s motor and fuselage components.  
             </Typography>
             <br />
             <br />
@@ -642,6 +749,16 @@ export default function CenteredTabs() {
       </Card>
     </Grid>
   );
+  const blankSlide = (
+    <Grid item xs>
+      <Card className={classes.root}>
+        <br />
+        <br />
+        <br />
+        <br />
+      </Card>
+    </Grid>
+  );
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -649,10 +766,8 @@ export default function CenteredTabs() {
 
   return (
     <section id="resume">
-      <br />
       <h1>Take a look at my Extracurricular Involvement!</h1>
       <div>
-        <Paper className={classes2.root}>
           <Tabs
             value={value}
             onChange={handleChange}
@@ -677,17 +792,19 @@ export default function CenteredTabs() {
           <TabPanel value={value} index={0}>
             <Grid container spacing={3}>
               {DOE}
+              {blueprint}
               {SAC}
               {Tanzania}
               {lifeguard}
               {createv}
-              {Suzuki}
+              {Principal}
               {Schulich}
             </Grid>
             <Grid container spacing={3}></Grid>
           </TabPanel>
           <TabPanel value={value} index={1}>
-            <Grid container spacing={1}>
+            <Grid container spacing={3}>
+              {blueprint}
               {lifeguard}
               {createv}
             </Grid>
@@ -695,8 +812,10 @@ export default function CenteredTabs() {
           <TabPanel value={value} index={2}>
             <Grid container spacing={3}>
               {DOE}
-              {Suzuki}
+              {Principal}
+              {Govener}
               {Schulich}
+              {Suzuki}
               {NLS}
             </Grid>
           </TabPanel>
@@ -719,7 +838,6 @@ export default function CenteredTabs() {
             </Grid>
           </TabPanel>
           <br />
-        </Paper>
       </div>
     </section>
   );

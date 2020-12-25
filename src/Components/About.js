@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import ExampleComponent from "react-rounded-image";
+import Typist from 'react-typist';
+import Typical from 'react-typical';
 
 class About extends Component {
   render() {
@@ -7,7 +9,10 @@ class About extends Component {
       var profilepic = "images/profilepic2.png";
     }
 
+    var email = <a href="mailto:dwijetun@uwaterloo.ca" target="_blank">email</a>;
+
     return (
+      
       <section id="about">
         <div className="row">
           <div className="three columns">
@@ -24,17 +29,12 @@ class About extends Component {
           </div>
           <div className="nine columns main-col">
             <h2>Hey there,</h2>
-
             <p>
-              My name’s Dinu (think Dinu the Dinosaur to help you remember!),
-              and I'm a 1A Software Engineering student at the University of
-              Waterloo. I’m passionate about using my technical skills and
-              leadership abilities to develop technology that improves lives
-              around the world. <br />
+            My name’s Dinu - think Dinu the Dinosaur to help you remember! I'm a 1B Software Engineering 
+            student at the University of Waterloo passionate about using leadership and technology for social good. <br />
               <br />
-              In my free time, I enjoy exploring the outdoors, hanging out with
-              friends, cooking and baking, and going swimming as often as I can!
-              Check out the rest of my website to learn more about me.
+              In my free time I enjoy exploring the outdoors, hanging out with friends, cooking 
+              and baking, and going swimming as often as I can! Check out the rest of my website to learn more about me or {email} to get in touch!  
             </p>
           </div>
         </div>
