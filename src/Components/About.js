@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import ExampleComponent from "react-rounded-image";
-import Typist from 'react-typist';
-import Typical from 'react-typical';
 
 class About extends Component {
   render() {
