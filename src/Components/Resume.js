@@ -6,6 +6,7 @@ import Tab from "@material-ui/core/Tab";
 import PropTypes from "prop-types";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
+import Button from "@material-ui/core/Button";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import SupervisorAccountIcon from "@material-ui/icons/SupervisorAccount";
 import StarIcon from "@material-ui/icons/Star";
@@ -16,13 +17,17 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Grid from "@material-ui/core/Grid";
+import CardActions from "@material-ui/core/CardActions";
 import SimpleModal from "@material-ui/core/Modal";
 import Modal from "@material-ui/core/Modal";
 import GridList from "@material-ui/core/GridList";
 import GridListTile from "@material-ui/core/GridListTile";
 import GridListTileBar from "@material-ui/core/GridListTileBar";
 import SimpleReactLightbox from "simple-react-lightbox";
+import LanguageIcon from '@material-ui/icons/Language';
 import { SRLWrapper } from "simple-react-lightbox";
+import { IconButton } from "@material-ui/core";
+
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -82,60 +87,24 @@ const useStyles = makeStyles({
   media: {
     height: 180,
   },
+  smallArea: {
+    maxHeight: 195,
+    minHeight: 195,
+  },
   root2: {
     flexGrow: 1,
   },
-});
-
-const useStyles2 = makeStyles({
-  root: {
-    flexGrow: 1,
+  root3: {
+    maxWidth: 345,
+    minWidth: 345,
+    maxHeight: 350,
+    minHeight: 350,
   },
 });
-
-const useStyles3 = makeStyles((theme) => ({
-  paper: {
-    position: "absolute",
-    width: 800,
-    height: 500,
-    backgroundColor: theme.palette.background.paper,
-    border: "2px solid #000",
-    boxShadow: theme.shadows[5],
-    padding: theme.spacing(2, 4, 3),
-  },
-}));
-
-const useStyles4 = makeStyles((theme) => ({
-  root: {
-    display: "flex",
-    flexWrap: "wrap",
-    justifyContent: "space-around",
-    overflow: "hidden",
-    backgroundColor: theme.palette.background.paper,
-  },
-  gridList: {
-    flexWrap: "nowrap",
-    // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
-    transform: "translateZ(0)",
-    height: "100% !important",
-    minHeight: "500px",
-  },
-  title: {
-    color: theme.palette.primary.light,
-  },
-  titleBar: {
-    background:
-      "linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)",
-  },
-}));
 
 export default function CenteredTabs() {
   const classes = useStyles();
-  const classes2 = useStyles2();
-  const classes3 = useStyles3();
-  const classes4 = useStyles4();
   const [value, setValue] = React.useState(0);
-  const [modalStyle] = React.useState(getModalStyle);
   const [open, setOpen] = React.useState(false);
 
   const handleOpen = () => {
@@ -152,6 +121,10 @@ export default function CenteredTabs() {
       <SimpleReactLightbox>
         <Card className={classes.root} variant="outlined" onClick={handleOpen}>
           <SRLWrapper>
+            <a
+              href="https://www.dukeofed.org/"
+              target="_blank"
+            >
             <CardActionArea>
               <CardMedia
                 className={classes.media}
@@ -159,7 +132,7 @@ export default function CenteredTabs() {
                 title="Duke of Ed"
               />
 
-              <CardContent>
+              <CardContent className={classes.smallArea}>
                 <Typography
                   gutterBottom
                   variant="h2"
@@ -177,16 +150,25 @@ export default function CenteredTabs() {
                   participation in several adventurous journeys, including dog
                   sledding and canoeing.
                 </Typography>
-                {/* <Typography variant="h6" color="textPrimary">
-                  Click me for more images!
-                </Typography> */}
                 <br />
                 <br />
                 <br />
                 <br />
               </CardContent>
             </CardActionArea>
+            </a>
           </SRLWrapper>
+          <CardActions>
+            <br/>
+            <IconButton 
+              minHeight='30px'
+              style={{width:'30px', height:'30px', color:'#2da6ce'}}
+              href="https://www.dukeofed.org/"
+              target="_blank"
+            >
+              <LanguageIcon style={{width:'30px', height:'30px', padding:'3px', color:'#2da6ce'}}/>
+            </IconButton>
+          </CardActions>
         </Card>
       </SimpleReactLightbox>
     </Grid>
@@ -194,9 +176,9 @@ export default function CenteredTabs() {
   const Principal = (
     <Grid item xs>
       <SimpleReactLightbox>
-        <Card className={classes.root} variant="outlined" onClick={handleOpen}>
+        <Card className={classes.root} variant="outlined">
           <SRLWrapper>
-            <CardActionArea>
+            <CardActionArea disabled={true}>
               <CardMedia
                 className={classes.media}
                 image="/images/ECs/principal.jpg"
@@ -234,7 +216,7 @@ export default function CenteredTabs() {
       <SimpleReactLightbox>
         <Card className={classes.root} variant="outlined" onClick={handleOpen}>
           <SRLWrapper>
-            <CardActionArea>
+            <CardActionArea disabled={true}>
               <CardMedia
                 className={classes.media}
                 image="/images/ECs/govGen.jpg"
@@ -270,7 +252,7 @@ export default function CenteredTabs() {
   const Suzuki = (
     <Grid item xs>
       <Card className={classes.root} variant="outlined" onClick={handleOpen}>
-        <CardActionArea>
+        <CardActionArea disabled={true}>
           <CardMedia
             className={classes.media}
             image="/images/ECs/Suzuki1.jpg"
@@ -304,7 +286,7 @@ export default function CenteredTabs() {
   const Schulich = (
     <Grid item xs>
       <Card className={classes.root} variant="outlined" onClick={handleOpen}>
-        <CardActionArea>
+        <CardActionArea disabled={true}>
           <CardMedia
             className={classes.media}
             image="/images/ECs/Schulich.jpg"
@@ -337,7 +319,7 @@ export default function CenteredTabs() {
   const NLS = (
     <Grid item xs>
       <Card className={classes.root} variant="outlined">
-        <CardActionArea>
+        <CardActionArea disabled={true}>
           <CardMedia
             className={classes.media}
             image="/images/ECs/NLS.jpg"
@@ -372,7 +354,7 @@ export default function CenteredTabs() {
   const SAC = (
     <Grid item xs>
       <Card className={classes.root} variant="outlined" onClick={handleOpen}>
-        <CardActionArea>
+        <CardActionArea disabled={true}>
           <CardMedia
             className={classes.media}
             image="/images/ECs/SAC1.jpg"
@@ -407,7 +389,7 @@ export default function CenteredTabs() {
   const PSPC = (
     <Grid item xs>
       <Card className={classes.root} variant="outlined" onClick={handleOpen}>
-        <CardActionArea>
+        <CardActionArea disabled={true}>
           <CardMedia
             className={classes.media}
             image="/images/ECs/PSPC1.jpg"
@@ -441,7 +423,7 @@ export default function CenteredTabs() {
   const SHAD = (
     <Grid item xs>
       <Card className={classes.root} variant="outlined" onClick={handleOpen}>
-        <CardActionArea>
+        <CardActionArea disabled={true}>
           <CardMedia
             className={classes.media}
             image="/images/ECs/SHAD1.jpg"
@@ -476,7 +458,7 @@ export default function CenteredTabs() {
   const Swim = (
     <Grid item xs>
       <Card className={classes.root} variant="outlined" onClick={handleOpen}>
-        <CardActionArea>
+        <CardActionArea disabled={true}>
           <CardMedia
             className={classes.media}
             image="/images/ECs/Swim1.jpg"
@@ -512,7 +494,7 @@ export default function CenteredTabs() {
   const Tanzania = (
     <Grid item xs>
       <Card className={classes.root} variant="outlined" onClick={handleOpen}>
-        <CardActionArea>
+        <CardActionArea disabled={true}>
           <CardMedia
             className={classes.media}
             image="/images/ECs/Tanzania1.jpg"
@@ -546,7 +528,7 @@ export default function CenteredTabs() {
   const Aspire = (
     <Grid item xs>
       <Card className={classes.root} variant="outlined" onClick={handleOpen}>
-        <CardActionArea>
+        <CardActionArea disabled={true}>
           <CardMedia
             className={classes.media}
             image="/images/ECs/Aspire1.jpg"
@@ -579,7 +561,7 @@ export default function CenteredTabs() {
   const EOK = (
     <Grid item xs>
       <Card className={classes.root} variant="outlined" onClick={handleOpen}>
-        <CardActionArea>
+        <CardActionArea disabled={true}>
           <CardMedia
             className={classes.media}
             image="/images/ECs/EOK1.jpg"
@@ -614,7 +596,7 @@ export default function CenteredTabs() {
   const volSwim = (
     <Grid item xs>
       <Card className={classes.root} variant="outlined" onClick={handleOpen}>
-        <CardActionArea>
+        <CardActionArea disabled={true}>
           <CardMedia
             className={classes.media}
             image="/images/ECs/volswim1.jpg"
@@ -649,41 +631,57 @@ export default function CenteredTabs() {
   const blueprint = (
     <Grid item xs>
       <Card className={classes.root} variant="outlined" onClick={handleOpen}>
-        <CardActionArea>
-          <CardMedia
-            className={classes.media}
-            image="/images/ECs/blueprint.jpg"
-            title="Blueprint"
-          />
+        <a
+        href="https://uwblueprint.org/"
+        target="_blank"
+        >
+          <CardActionArea>
+            <CardMedia
+              className={classes.media}
+              image="/images/ECs/blueprint.jpg"
+              title="Blueprint"
+            />
 
-          <CardContent>
-            <Typography
-              gutterBottom
-              variant="h2"
-              component="h2"
-              color="textPrimary"
-            >
-              Blueprint
-            </Typography>
-            <Typography component="h4">
-              University of Waterloo
-            </Typography>
-            <Typography variant="h5" color="textSecondary" component="p">
-            Blueprint is a student-run club which develops software for non-profit organizations in the Waterloo Region. As a Developer on a Blueprint project, I’ve worked with a team of 10 devs/designers to create an interactive webapp from scratch in 4 months.    
-            </Typography>
-            <br />
-            <br />
-            <br />
-            <br />
-          </CardContent>
-        </CardActionArea>
+            <CardContent className={classes.smallArea}>
+              <Typography
+                gutterBottom
+                variant="h2"
+                component="h2"
+                color="textPrimary"
+              >
+                Blueprint
+              </Typography>
+              <Typography component="h4">
+                University of Waterloo
+              </Typography>
+              <Typography variant="h5" color="textSecondary" component="p">
+              Blueprint is a student-run club which develops software for non-profit organizations in the Waterloo Region. As a Developer on a Blueprint project, I’ve worked with a team of 10 devs/designers to create an interactive webapp from scratch in 4 months.    
+              </Typography>
+              <br />
+              <br />
+              <br />
+              <br />
+            </CardContent>
+          </CardActionArea>
+        </a>
+        <CardActions>
+          <br/>
+          <IconButton 
+            minHeight='30px'
+            style={{width:'30px', height:'30px', color:'#2da6ce'}}
+            href="https://uwblueprint.org/"
+            target="_blank"
+          >
+            <LanguageIcon style={{width:'30px', height:'30px', padding:'3px', color:'#2da6ce'}}/>
+          </IconButton>
+        </CardActions>
       </Card>
     </Grid>
   );
   const lifeguard = (
     <Grid item xs>
       <Card className={classes.root} variant="outlined" onClick={handleOpen}>
-        <CardActionArea>
+        <CardActionArea disabled={true}>
           <CardMedia
             className={classes.media}
             image="/images/ECs/lifeguard1.jpg"
@@ -701,10 +699,7 @@ export default function CenteredTabs() {
             </Typography>
             <Typography component="h4">City of Mississauga</Typography>
             <Typography variant="h5" color="textSecondary" component="p">
-              Delivered swimming and water safety lessons to children aged 1-16
-              and hosted regular meetings to discuss progress with parents. Also
-              guarded community swim times. and hosted regular meetings to
-              discuss progress with parents. Also guarded community swims.
+            Delivered swimming and water safety lessons to children aged 1-16 and hosted regular meetings to discuss progress with parents. Also guarded community swims. 
             </Typography>
             <br />
             <br />
@@ -718,7 +713,7 @@ export default function CenteredTabs() {
   const createv = (
     <Grid item xs>
       <Card className={classes.root} variant="outlined" onClick={handleOpen}>
-        <CardActionArea>
+        <CardActionArea disabled={true}>
           <CardMedia
             className={classes.media}
             image="/images/ECs/createv1.jpg"
@@ -746,16 +741,6 @@ export default function CenteredTabs() {
             <br />
           </CardContent>
         </CardActionArea>
-      </Card>
-    </Grid>
-  );
-  const blankSlide = (
-    <Grid item xs>
-      <Card className={classes.root}>
-        <br />
-        <br />
-        <br />
-        <br />
       </Card>
     </Grid>
   );

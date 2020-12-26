@@ -268,7 +268,7 @@ export default function MediaCard() {
                         color="textSecondary"
                         component="p"
                       >
-                        My react-based personal website with MaterialUI Components and CSS Styling. Originally forked from an existing template. 
+                        My react-based personal website with MaterialUI Components and CSS Styling. 
                       </Typography>
                       <br></br>
                       <div className={classes.chip}>

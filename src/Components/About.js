@@ -27,7 +27,8 @@ class About extends Component {
           </div>
           <div className="nine columns main-col">
             <h2>Hey there,</h2>
-            <p>
+            <p style={{fontSize: '20px'}}>
+              
             My name’s Dinu - think Dinu the Dinosaur to help you remember! I'm a 1B Software Engineering 
             student at the University of Waterloo passionate about using leadership and technology for social good. <br />
               <br />
