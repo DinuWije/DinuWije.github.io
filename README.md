@@ -3,4 +3,4 @@
 ## Description
 My personal website, made with React.js and Material-UI components! 
 
-This project forks from [https://github.com/tbakerx/react-resume-template](https://github.com/tbakerx/react-resume-template), I made some modifications and adjustments, thanks to the [author](https://github.com/tbakerx).
+This project forks from [a template](https://react-resume-template.herokuapp.com/), I made some modifications and adjustments, thanks to the [author](https://github.com/tbakerx).
