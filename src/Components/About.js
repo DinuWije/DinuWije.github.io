@@ -29,7 +29,7 @@ class About extends Component {
             <h2>Hey there,</h2>
             <p style={{fontSize: '20px'}}>
               
-            My name’s Dinu - think Dinu the Dinosaur to help you remember! I'm a 1B Software Engineering 
+            My name’s Dinu - think Dinu the Dinosaur to help you remember! I'm a Software Engineering 
             student at the University of Waterloo passionate about using leadership and technology for social good. <br />
               <br />
               In my free time I enjoy exploring the outdoors, hanging out with friends, cooking 

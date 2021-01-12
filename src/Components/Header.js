@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ParticlesBg from "particles-bg";
-import pdf from "../files/DinuWijetungaResume.pdf";
-import Typist from 'react-typist';
+import pdf from "../files/Fullstack_Resume.pdf";
+import Typist from "react-typist";
 
 class Header extends Component {
   render() {
@@ -13,7 +13,7 @@ class Header extends Component {
       var description = this.props.data.description;
       var languages = this.props.data.languages;
       var city = this.props.data.address.city;
-      var networks = this.props.data.social.map(function (network) {
+      var networks = this.props.data.social.map(function(network) {
         return (
           <li key={network.name}>
             <a href={network.url}>
@@ -61,13 +61,13 @@ class Header extends Component {
 
         <div className="row banner">
           <div className="banner-text">
-            <Typist cursor={{show: false}}>
+            <Typist cursor={{ show: false }}>
               <h1>Dinu Wijetunga</h1>
             </Typist>
-            <Typist cursor={{show: false}}>
+            <Typist cursor={{ show: false }}>
               <Typist.Delay ms={1300} />
-              <h3>University of Waterloo Software Engineering '25</h3>
-              <Typist.Backspace count={47} delay={1500} />
+              <h3>University of Waterloo Software Engineering</h3>
+              <Typist.Backspace count={43} delay={1500} />
               <h3>Passionate about using technology for social good</h3>
               <Typist.Backspace count={49} delay={1500} />
               <h3>Avid camper, swimmer, and nature lover</h3>
@@ -76,7 +76,7 @@ class Header extends Component {
               <Typist.Backspace count={37} delay={1500} />
               <h3>Huge movie buff (Interstellar is my fav)</h3>
               <Typist.Backspace count={41} delay={1500} />
-              <h3>University of Waterloo Software Engineering '25</h3>
+              <h3>University of Waterloo Software Engineering</h3>
             </Typist>
             <ul className="social">
               <a
@@ -93,11 +93,7 @@ class Header extends Component {
               >
                 <i className="fa fa-github"></i>GitHub
               </a>
-              <a
-                href={pdf}
-                className="button btn resume-btn"
-                target="_blank"
-              >
+              <a href={pdf} className="button btn resume-btn" target="_blank">
                 <i className="fa fa-file"></i>Resume
               </a>
             </ul>
