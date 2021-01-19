@@ -388,18 +388,6 @@ export default function MediaCard() {
                   >
                     Live Demo
                   </Button>
-                  <Button
-                    href="https://uwblueprint.org/"
-                    target="_blank"
-                    style={{ height: "40px", color: "#2da6ce" }}
-                    startIcon={
-                      <LanguageIcon
-                        style={{ height: "40px", color: "#2da6ce" }}
-                      />
-                    }
-                  >
-                    UW Blueprint
-                  </Button>
                 </CardActions>
               </Card>
             </Grid>
