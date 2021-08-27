@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ParticlesBg from "particles-bg";
-import pdf from "../files/Fullstack_Resume.pdf";
+import pdf from "../files/Backend_Resume.pdf";
 import Typist from "react-typist";
 
 class Header extends Component {
@@ -53,7 +53,7 @@ class Header extends Component {
             </li>
             <li>
               <a className="smoothscroll" href="#resume">
-                Extracurriculars
+                Experience
               </a>
             </li>
           </ul>
@@ -66,14 +66,12 @@ class Header extends Component {
             </Typist>
             <Typist cursor={{ show: false }}>
               <Typist.Delay ms={1300} />
-              <h3>University of Waterloo Software Engineering</h3>
-              <Typist.Backspace count={43} delay={1500} />
               <h3>Passionate about using technology for social good</h3>
               <Typist.Backspace count={49} delay={1500} />
+              <h3>Backend developer with an interest in consulting</h3>
+              <Typist.Backspace count={48} delay={1500} />
               <h3>Avid camper, swimmer, and nature lover</h3>
               <Typist.Backspace count={38} delay={1500} />
-              <h3>Interested in Frontend and Mobile Dev</h3>
-              <Typist.Backspace count={37} delay={1500} />
               <h3>Huge movie buff (Interstellar is my fav)</h3>
               <Typist.Backspace count={41} delay={1500} />
               <h3>University of Waterloo Software Engineering</h3>

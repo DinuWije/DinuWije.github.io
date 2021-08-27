@@ -73,6 +73,115 @@ export default function MediaCard() {
           <Grid container spacing={3}>
             <Grid item xs>
               <Card className={classes.root}>
+                <a
+                  href="https://github.com/uwblueprint/shoe-project"
+                  target="_blank"
+                >
+                  <CardActionArea>
+                    <CardMedia
+                      className={classes.media}
+                      image="/images/portfolio/shoeProject.jpg"
+                      title="Shoe Project"
+                    />
+
+                    <CardContent className={classes.smallArea}>
+                      <Typography
+                        gutterBottom
+                        variant="h2"
+                        component="h2"
+                        color="textPrimary"
+                      >
+                        The Shoe Project
+                      </Typography>
+                      <Typography
+                        variant="h5"
+                        color="textSecondary"
+                        component="p"
+                      >
+                        Consulted with a non-profit organization to develop and interactive app.
+                        Frontend: MaterialUI & Mapbox API. Backend: HTTP
+                        requests & authentication. With Heroku, Postgres & AWS
+                        S3.
+                      </Typography>
+                      <div className={classes.chip}>
+                        <StyledChip
+                          label="Typescript"
+                          size="small"
+                          variant="outlined"
+                          style={{ backgroundColor: "#2da6ce" }}
+                        />
+                        <StyledChip
+                          label="Golang"
+                          size="small"
+                          variant="outlined"
+                          style={{ backgroundColor: "#2da6ce" }}
+                        />
+                        <StyledChip
+                          label="React"
+                          size="small"
+                          variant="outlined"
+                          style={{ backgroundColor: "#2da6ce" }}
+                        />
+                        <StyledChip
+                          label="Git"
+                          size="small"
+                          variant="outlined"
+                          style={{ backgroundColor: "#2da6ce" }}
+                        />
+                        <StyledChip
+                          label="Heroku"
+                          size="small"
+                          variant="outlined"
+                          style={{ backgroundColor: "#2da6ce" }}
+                        />
+                        <StyledChip
+                          label="AWS"
+                          size="small"
+                          variant="outlined"
+                          style={{ backgroundColor: "#2da6ce" }}
+                        />
+                        <StyledChip
+                          label="UX/UI"
+                          size="small"
+                          variant="outlined"
+                          style={{ backgroundColor: "#2da6ce" }}
+                        />
+                        <StyledChip
+                          label="Docker"
+                          size="small"
+                          variant="outlined"
+                          style={{ backgroundColor: "#2da6ce" }}
+                        />
+                      </div>
+                    </CardContent>
+                  </CardActionArea>
+                </a>
+                <CardActions>
+                  <Button
+                    href="https://github.com/uwblueprint/shoe-project"
+                    target="_blank"
+                    style={{ height: "40px", color: "#2da6ce" }}
+                    startIcon={
+                      <GitHubIcon
+                        style={{ height: "40px", color: "#2da6ce" }}
+                      />
+                    }
+                  />
+                  <Button
+                    href="http://map.theshoeproject.online/"
+                    target="_blank"
+                    style={{ height: "40px", color: "#2da6ce" }}
+                    startIcon={
+                      <LinkIcon style={{ height: "40px", color: "#2da6ce" }} />
+                    }
+                  >
+                    Live Demo
+                  </Button>
+                </CardActions>
+              </Card>
+            </Grid>
+            <Grid item xs>
+              <Card className={classes.root}>
                 <a href="https://github.com/DinuWije/EZventory" target="_blank">
                   <CardActionArea>
                     <CardMedia
@@ -174,219 +283,6 @@ export default function MediaCard() {
                     }
                   >
                     Google Play
-                  </Button>
-                </CardActions>
-              </Card>
-            </Grid>
-            {/* <Grid item xs>
-              <Card className={classes.root}>
-                <a
-                  href="https://github.com/DinuWije/InventoryAppBackend"
-                  target="_blank"
-                >
-                  <CardActionArea>
-                    <CardMedia
-                      className={classes.media}
-                      image="/images/portfolio/appBackend.jpg"
-                      title="EZventory Backend"
-                    />
-
-                    <CardContent className={classes.smallArea}>
-                      <Typography
-                        gutterBottom
-                        variant="h2"
-                        component="h2"
-                        color="textPrimary"
-                      >
-                        EZventory Backend
-                      </Typography>
-                      <Typography
-                        variant="h5"
-                        color="textSecondary"
-                        component="p"
-                      >
-                        Handles user authentication tokens, HTTP requests, and a
-                        MySQL database. The backend was deployed onto an AWS EC2
-                        Instance with the help of Docker.
-                      </Typography>
-                      <div className={classes.chip}>
-                        <StyledChip
-                          label="Python"
-                          size="small"
-                          variant="outlined"
-                          style={{ backgroundColor: "#2da6ce" }}
-                        />
-                        <StyledChip
-                          label="Flask"
-                          size="small"
-                          variant="outlined"
-                          style={{ backgroundColor: "#2da6ce" }}
-                        />
-                        <StyledChip
-                          label="REST API"
-                          size="small"
-                          variant="outlined"
-                          style={{ backgroundColor: "#2da6ce" }}
-                        />
-                        <StyledChip
-                          label="SQLAlchemy"
-                          size="small"
-                          variant="outlined"
-                          style={{ backgroundColor: "#2da6ce" }}
-                        />
-                        <StyledChip
-                          label="MySQL"
-                          size="small"
-                          variant="outlined"
-                          style={{ backgroundColor: "#2da6ce" }}
-                        />
-                        <StyledChip
-                          label="Docker"
-                          size="small"
-                          variant="outlined"
-                          style={{ backgroundColor: "#2da6ce" }}
-                        />
-                        <StyledChip
-                          label="AWS"
-                          size="small"
-                          variant="outlined"
-                          style={{ backgroundColor: "#2da6ce" }}
-                        />
-                        <StyledChip
-                          label="Postman"
-                          size="small"
-                          variant="outlined"
-                          style={{ backgroundColor: "#2da6ce" }}
-                        />
-                      </div>
-                    </CardContent>
-                  </CardActionArea>
-                </a>
-                <CardActions>
-                  <br />
-                  <IconButton
-                    minHeight="30px"
-                    style={{ width: "30px", height: "30px", color: "#2da6ce" }}
-                    href="https://github.com/DinuWije/InventoryAppBackend"
-                    target="_blank"
-                  >
-                    <GitHubIcon
-                      style={{
-                        width: "30px",
-                        height: "30px",
-                        padding: "3px",
-                        color: "#2da6ce",
-                      }}
-                    />
-                  </IconButton>
-                </CardActions>
-              </Card>
-            </Grid> */}
-            <Grid item xs>
-              <Card className={classes.root}>
-                <a
-                  href="https://github.com/uwblueprint/shoe-project"
-                  target="_blank"
-                >
-                  <CardActionArea>
-                    <CardMedia
-                      className={classes.media}
-                      image="/images/portfolio/shoeProject.jpg"
-                      title="Shoe Project"
-                    />
-
-                    <CardContent className={classes.smallArea}>
-                      <Typography
-                        gutterBottom
-                        variant="h2"
-                        component="h2"
-                        color="textPrimary"
-                      >
-                        The Shoe Project
-                      </Typography>
-                      <Typography
-                        variant="h5"
-                        color="textSecondary"
-                        component="p"
-                      >
-                        Web App developed for a non-profit organization.
-                        Frontend: MaterialUI & Mapbox API. Backend: HTTP
-                        requests & authentication. With Heroku, Postgres & AWS
-                        S3.
-                      </Typography>
-                      <div className={classes.chip}>
-                        <StyledChip
-                          label="Typescript"
-                          size="small"
-                          variant="outlined"
-                          style={{ backgroundColor: "#2da6ce" }}
-                        />
-                        <StyledChip
-                          label="Golang"
-                          size="small"
-                          variant="outlined"
-                          style={{ backgroundColor: "#2da6ce" }}
-                        />
-                        <StyledChip
-                          label="React"
-                          size="small"
-                          variant="outlined"
-                          style={{ backgroundColor: "#2da6ce" }}
-                        />
-                        <StyledChip
-                          label="Git"
-                          size="small"
-                          variant="outlined"
-                          style={{ backgroundColor: "#2da6ce" }}
-                        />
-                        <StyledChip
-                          label="Heroku"
-                          size="small"
-                          variant="outlined"
-                          style={{ backgroundColor: "#2da6ce" }}
-                        />
-                        <StyledChip
-                          label="AWS"
-                          size="small"
-                          variant="outlined"
-                          style={{ backgroundColor: "#2da6ce" }}
-                        />
-                        <StyledChip
-                          label="UX/UI"
-                          size="small"
-                          variant="outlined"
-                          style={{ backgroundColor: "#2da6ce" }}
-                        />
-                        <StyledChip
-                          label="Docker"
-                          size="small"
-                          variant="outlined"
-                          style={{ backgroundColor: "#2da6ce" }}
-                        />
-                      </div>
-                    </CardContent>
-                  </CardActionArea>
-                </a>
-                <CardActions>
-                  <Button
-                    href="https://github.com/uwblueprint/shoe-project"
-                    target="_blank"
-                    style={{ height: "40px", color: "#2da6ce" }}
-                    startIcon={
-                      <GitHubIcon
-                        style={{ height: "40px", color: "#2da6ce" }}
-                      />
-                    }
-                  />
-                  <Button
-                    href="http://map.theshoeproject.online/"
-                    target="_blank"
-                    style={{ height: "40px", color: "#2da6ce" }}
-                    startIcon={
-                      <LinkIcon style={{ height: "40px", color: "#2da6ce" }} />
-                    }
-                  >
-                    Live Demo
                   </Button>
                 </CardActions>
               </Card>

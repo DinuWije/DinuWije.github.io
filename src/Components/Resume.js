@@ -655,7 +655,7 @@ export default function CenteredTabs() {
                 University of Waterloo
               </Typography>
               <Typography variant="h5" color="textSecondary" component="p">
-              Blueprint is a student-run club which develops software for non-profit organizations in the Waterloo Region. As a Developer on a Blueprint project, I’ve worked with a team of 10 devs/designers to create an interactive webapp from scratch in 4 months.    
+              Blueprint is a student-run consulting club which develops software for non-profit organizations in the Waterloo Region. As a Developer on a Blueprint project, I’ve worked with a team of 10 devs/designers to create an interactive webapp from scratch in 4 months.    
               </Typography>
               <br />
               <br />
@@ -745,13 +745,48 @@ export default function CenteredTabs() {
     </Grid>
   );
 
+  const cloudspark = (
+    <Grid item xs>
+      <Card className={classes.root} variant="outlined" onClick={handleOpen}>
+        <CardActionArea disabled={true}>
+          <CardMedia
+            className={classes.media}
+            image="/images/ECs/cloudspark.jpg"
+            title="Cloudspark"
+          />
+
+          <CardContent>
+            <Typography
+              gutterBottom
+              variant="h2"
+              component="h2"
+              color="textPrimary"
+            >
+              Backend Software Engineering Intern
+            </Typography>
+            <Typography component="h4">
+              Cloudspark Labs
+            </Typography>
+            <Typography variant="h5" color="textSecondary" component="p">
+             Worked on all aspects of the backend including REST API development in NestJS, Graph Queries with Gremlin, SQL Queries within Cosmos' non-relationl DB, and CI/CD in Azure piplelines.     
+            </Typography>
+            <br />
+            <br />
+            <br />
+            <br />
+          </CardContent>
+        </CardActionArea>
+      </Card>
+    </Grid>
+  );
+
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
 
   return (
     <section id="resume">
-      <h1>Take a look at my Extracurricular Involvement!</h1>
+      <h1>Take a look at my Experience!</h1>
       <div>
           <Tabs
             value={value}
@@ -775,20 +810,21 @@ export default function CenteredTabs() {
             />
           </Tabs>
           <TabPanel value={value} index={0}>
-            <Grid container spacing={3}>
-              {DOE}
+          <Grid container spacing={3}>
+              {cloudspark}
               {blueprint}
-              {SAC}
+              {DOE}
               {Tanzania}
-              {lifeguard}
-              {createv}
-              {Principal}
               {Schulich}
+              {lifeguard}
+              {SAC}
+              {createv}
             </Grid>
             <Grid container spacing={3}></Grid>
           </TabPanel>
           <TabPanel value={value} index={1}>
-            <Grid container spacing={3}>
+          <Grid container spacing={3}>
+              {cloudspark}
               {blueprint}
               {lifeguard}
               {createv}
