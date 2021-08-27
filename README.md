@@ -1,4 +1,4 @@
-# [dinuw.me](https://dinuw.me/)  
+# [dinuwije.github.io](https://dinuwije.github.io/)  
 
 ## Description
 My personal website, made with React.js and Material-UI components! 
