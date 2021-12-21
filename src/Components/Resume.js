@@ -316,6 +316,59 @@ export default function CenteredTabs() {
       </Card>
     </Grid>
   );
+
+  const Scholarship = (
+    <Grid item xs>
+      <Card className={classes.root} variant="outlined" onClick={handleOpen}>
+        <a
+        href="https://uwaterloo.ca/student-awards-financial-aid/awards/kurt-and-marianne-strobele-engineering-award/"
+        target="_blank"
+        >
+          <CardActionArea>
+            <CardMedia
+              className={classes.media}
+              image="/images/ECs/scholarship.jpg"
+              title="Scholarship"
+            />
+
+            <CardContent className={classes.smallArea}>
+              <Typography
+                gutterBottom
+                variant="h2"
+                component="h2"
+                color="textPrimary"
+              >
+                Kurt and Marianne Strobele Engineering Award
+              </Typography>
+              <Typography component="h4">
+                University of Waterloo
+              </Typography>
+              <Typography variant="h5" color="textSecondary" component="p">
+              One of two recipients of a prestigious STEM scholarship ($24 000) for students demonstrating academic excellence 
+                and leadership in extracurricular/volunteer activities    
+              </Typography>
+              <br />
+              <br />
+              <br />
+              <br />
+            </CardContent>
+          </CardActionArea>
+        </a>
+        <CardActions>
+          <br/>
+          <IconButton 
+            minHeight='30px'
+            style={{width:'30px', height:'30px', color:'#2da6ce'}}
+            href="https://uwaterloo.ca/student-awards-financial-aid/awards/kurt-and-marianne-strobele-engineering-award/"
+            target="_blank"
+          >
+            <LanguageIcon style={{width:'30px', height:'30px', padding:'3px', color:'#2da6ce'}}/>
+          </IconButton>
+        </CardActions>
+      </Card>
+    </Grid>
+  );
+
   const NLS = (
     <Grid item xs>
       <Card className={classes.root} variant="outlined">
@@ -811,8 +864,8 @@ export default function CenteredTabs() {
           </Tabs>
           <TabPanel value={value} index={0}>
           <Grid container spacing={3}>
-              {cloudspark}
               {blueprint}
+              {Scholarship}
               {DOE}
               {Tanzania}
               {Schulich}

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ParticlesBg from "particles-bg";
-import pdf from "../files/Backend_Resume.pdf";
+import pdf from "../files/Backend_Resume_2022.pdf";
 import Typist from "react-typist";
 
 class Header extends Component {
@@ -47,13 +47,13 @@ class Header extends Component {
               </a>
             </li>
             <li>
-              <a className="smoothscroll" href="#portfolio">
-                Projects
+              <a className="smoothscroll" href="#resume">
+                Experience
               </a>
             </li>
             <li>
-              <a className="smoothscroll" href="#resume">
-                Experience
+              <a className="smoothscroll" href="#portfolio">
+                Projects
               </a>
             </li>
           </ul>
@@ -68,7 +68,7 @@ class Header extends Component {
               <Typist.Delay ms={1300} />
               <h3>Passionate about using technology for social good</h3>
               <Typist.Backspace count={49} delay={1500} />
-              <h3>Backend developer with an interest in consulting</h3>
+              <h3>Backend developer with an interest in big data</h3>
               <Typist.Backspace count={48} delay={1500} />
               <h3>Avid camper, swimmer, and nature lover</h3>
               <Typist.Backspace count={38} delay={1500} />
