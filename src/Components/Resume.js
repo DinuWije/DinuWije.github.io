@@ -634,8 +634,8 @@ export default function CenteredTabs() {
               ErinoakKids Centre for Development
             </Typography>
             <Typography variant="h5" color="textSecondary" component="p">
-              Assisted children with mental and physical disabilities gain
-              greater independence through engaging summer camps and programs.
+            Assisted children with mental and physical disabilities in gaining greater 
+            independence through engaging summer camps and programs.
             </Typography>
             <br />
             <br />

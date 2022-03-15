@@ -91,7 +91,7 @@ class Header extends Component {
               >
                 <i className="fa fa-github"></i>GitHub
               </a>
-              <a href={pdf} className="button btn resume-btn" target="_blank" rel="noopener noreferrer">
+              <a href={process.env.PUBLIC_URL + '/resume.pdf'} className="button btn resume-btn" target="_blank" rel="noopener noreferrer">
                 <i className="fa fa-file"></i>Resume
               </a>
             </ul>
