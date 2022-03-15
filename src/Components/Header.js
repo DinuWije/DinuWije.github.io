@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import ParticlesBg from "particles-bg";
-import pdf from "../files/Backend_Resume_2022.pdf";
 import Typist from "react-typist";
 
 class Header extends Component {
@@ -91,7 +90,7 @@ class Header extends Component {
               >
                 <i className="fa fa-github"></i>GitHub
               </a>
-              <a href={pdf} className="button btn resume-btn" target="_blank">
+              <a href={process.env.PUBLIC_URL + "/resume.pdf"} className="button btn resume-btn" target="_blank" rel="noopener noreferrer">
                 <i className="fa fa-file"></i>Resume
               </a>
             </ul>
