@@ -29,11 +29,12 @@ class About extends Component {
             <h2>Hey there,</h2>
             <p style={{fontSize: '20px'}}>
               
-            My name’s Dinu - think Dinu the Dinosaur to help you remember! I'm a Software Engineering 
-            student at the University of Waterloo passionate about using tech for social good. <br />
+            My name’s Dinu - I'm looking to work with some talented people to build high‑performance, scalable software systems. <br />
               <br />
-              In my free time I enjoy exploring the outdoors, hanging out with friends, cooking 
-              and baking, and going swimming as often as I can! If you need to get in touch, please email: {email}  
+              I'm finishing up my Software Engineering degree at UWaterloo, and in my free time I like to improve my cooking 
+              skills, work out with friends, and travel with my family! <br />
+              <br />
+              I'd love to chat, so please reach out to me at my email: {email}  
             </p>
           </div>
         </div>
